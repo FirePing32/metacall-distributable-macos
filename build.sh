@@ -7,6 +7,10 @@ if [[ $(command -v brew) == "" ]]; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
+# Update xcode tools
+xcode-select --install
+xcode-select --switch /Library/Developer/CommandLineTools
+
 # Get brew formula
 wget https://raw.githubusercontent.com/metacall/homebrew/main/metacall.rb
 
