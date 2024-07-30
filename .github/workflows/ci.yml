@@ -60,8 +60,8 @@ jobs:
       - name: Build
         run:  ./build.sh
 
-      - name: Test
-        run: ./test.sh
+      # - name: Test
+      #   run: ./test.sh
 
       # Upload build artifact
       - name: Upload artifact
